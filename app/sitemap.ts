@@ -1,14 +1,14 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://queue-tech.jp/";
+const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: SITE_URL,
+      url: LP_DEPLOY_URL,
       lastModified: new Date("2026-05-18"),
-      changeFrequency: "monthly",
-      priority: 1,
+      changeFrequency: "daily", 
+      priority: 1.0,
     },
   ];
 }
