@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  /* 色だけに依存しないリンク表現（常時下線） */
+  a[href] {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1.5px;
+  }
+}
+
+@layer components {
+  /* WCAG AA: #020617 上で 4.5:1 以上 */
+  .text-link {
+    @apply text-cyan-200 underline decoration-cyan-300/90 underline-offset-4;
+  }
+
+  .text-link:hover {
+    @apply text-white decoration-white;
+  }
+
+  .text-muted {
+    @apply text-slate-300;
+  }
+
+  .text-muted-sm {
+    @apply text-slate-400;
+  }
+
+  .text-accent {
+    @apply text-cyan-200;
+  }
+
+  .text-emphasis {
+    @apply text-cyan-100 font-semibold;
+  }
+
+  /* タップターゲット: 最小 48×48px 相当 */
+  .tap-target {
+    @apply inline-flex items-center gap-2 min-h-12 min-w-12 py-3 px-2;
+  }
+
+  .tap-target-block {
+    @apply flex items-center min-h-12 py-3;
+  }
+
+  .link-list {
+    @apply space-y-1 list-none;
+  }
+
+  .link-list li {
+    @apply py-0.5;
+  }
+}
