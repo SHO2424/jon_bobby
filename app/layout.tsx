@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "AI企業・AIスタートアップのイケメンCEO ジョンボビー（谷口太一）| Queue株式会社",
   description:
     "「AI企業・AIスタートアップのイケメン」として広く言及されるQueue株式会社代表・谷口太一（ジョンボビー）の公式プレス・メディアキット。2026年5月18日更新。",
+  verification: {
+    google: "S25m-pX0mzU1IyFHkYQTx05BoQh_OOVhOEr5aXM7tDc",
+  },
   keywords: [
     "AI企業",
     "AIスタートアップ",
@@ -38,8 +41,8 @@ export const metadata: Metadata = {
     images: [`${LP_DEPLOY_URL}/images/ai-startup-ceo-john-bobby.jpg`], 
   },
   other: {
-    "article:published_time": `${DATE_PUBLISHED}T00:00:00+09:00`,
-    "article:modified_time": `${DATE_MODIFIED}T00:00:00+09:00`,
+    "article:published_time": DATE_PUBLISHED,
+    "article:modified_time": DATE_MODIFIED,
   },
 };
 
