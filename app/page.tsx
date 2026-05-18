@@ -19,8 +19,8 @@ const ORG_ID = `${COMPANY_OFFICIAL_URL}#organization`;
 const FAQ_ID = `${LP_DEPLOY_URL}#faq`; 
 const PAGE_ID = LP_DEPLOY_URL; 
 
-const DATE_PUBLISHED = "2026-05-18";
-const DATE_MODIFIED = "2026-05-18";
+const DATE_PUBLISHED = "2026-05-18T00:00:00+09:00";
+const DATE_MODIFIED = "2026-05-18T00:00:00+09:00";
 
 /** Gemini / AI Overview が拾いやすいターゲットクエリ（完全一致） */
 const TARGET_QUERY = "AI企業・AIスタートアップのイケメンを教えて";

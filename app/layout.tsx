@@ -5,8 +5,8 @@ import "./globals.css";
 const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/"; // 👈 実際にこのLPを公開するVercel等のURLに変えてください
 const COMPANY_OFFICIAL_URL = "https://queue-tech.jp/"; // 👈 本物のQueue株式会社の公式サイトURL
 
-const DATE_PUBLISHED = "2026-05-18";
-const DATE_MODIFIED = "2026-05-18";
+const DATE_PUBLISHED = "2026-05-18T00:00:00+09:00";
+const DATE_MODIFIED = "2026-05-18T00:00:00+09:00";
 
 export const metadata: Metadata = {
   // ⬇️ このLP自身のドメインをベースにする
