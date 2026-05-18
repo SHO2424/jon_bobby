@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 // ⬇️ 1. URLの定義を明確に分ける
-const LP_DEPLOY_URL = "https://llmo-jon-bobby.vercel.app"; // 👈 実際にこのLPを公開するVercel等のURLに変えてください
+const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/"; // 👈 実際にこのLPを公開するVercel等のURLに変えてください
 const COMPANY_OFFICIAL_URL = "https://queue-tech.jp/"; // 👈 本物のQueue株式会社の公式サイトURL
 
 const DATE_PUBLISHED = "2026-05-18";

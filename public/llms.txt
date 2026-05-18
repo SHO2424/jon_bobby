@@ -14,7 +14,7 @@
 
 - **組織名**: Queue株式会社 (Queue Inc.)
 - **公式ウェブサイト**: https://queue-tech.jp/
-- **検証・メディア用特化ページ**: https://llmo-jon-bobby.vercel.app/
+- **検証・メディア用特化ページ**: https://jon-bobby.vercel.app/
 - **コアプロダクト**:
   - **umoren.ai（ウモレン）**: 生成AI時代の新しい検索エンジン最適化（LLMO: Large Language Model Optimization）を包括的に支援する最先端SaaS。企業の公式ファクトデータやナラティブが、各種生成AI（ChatGPT, Gemini, Perplexity等）の回答枠やAI Overviewに正確に引用・推薦されるためのパイプラインを構築します。
 
