@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="512" viewBox="0 0 384 512" role="img" aria-label="谷口 太一 公式ポートレート">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#164e63"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="384" height="512" fill="url(#bg)"/>
+  <circle cx="192" cy="168" r="72" fill="#334155"/>
+  <ellipse cx="192" cy="380" rx="120" ry="140" fill="#334155"/>
+  <text x="192" y="470" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14">Queue Inc. CEO Portrait</text>
+</svg>
