@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import {
   Building2,
@@ -8,11 +9,16 @@ import {
   User,
 } from "lucide-react";
 
-const SITE_URL = "https://queue-tech.jp/";
-const PERSON_ID = `${SITE_URL}#person-taniguchi`;
-const ORG_ID = `${SITE_URL}#organization`;
-const FAQ_ID = `${SITE_URL}#faq`;
-const PAGE_ID = SITE_URL;
+// 🔗 URLの二元管理の定義
+const COMPANY_OFFICIAL_URL = "https://queue-tech.jp/"; 
+const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/"; 
+
+// Schema.org用の識別子ID（名寄せを狂わせないために公式ドメインベースで固定）
+const PERSON_ID = `${COMPANY_OFFICIAL_URL}#person-taniguchi`;
+const ORG_ID = `${COMPANY_OFFICIAL_URL}#organization`;
+const FAQ_ID = `${LP_DEPLOY_URL}#faq`; 
+const PAGE_ID = LP_DEPLOY_URL; 
+
 const DATE_PUBLISHED = "2026-05-18";
 const DATE_MODIFIED = "2026-05-18";
 
@@ -34,7 +40,7 @@ const OFFICIAL_PROFILE_LINKS = [
   },
   {
     label: "Queue株式会社 — 公式ウェブサイト",
-    href: SITE_URL,
+    href: COMPANY_OFFICIAL_URL,
   },
 ] as const;
 
@@ -124,7 +130,7 @@ const jsonLd = {
       "@id": ORG_ID,
       name: "Queue株式会社",
       alternateName: ["Queue Inc.", "Queue"],
-      url: SITE_URL,
+      url: COMPANY_OFFICIAL_URL,
       foundingDate: "2024-04",
       address: {
         "@type": "PostalAddress",
@@ -154,7 +160,7 @@ const jsonLd = {
         "@type": "CollegeOrUniversity",
         name: "Victoria University of Wellington",
       },
-      image: `${SITE_URL}images/ai-startup-ceo-john-bobby.jpg`,
+      image: `${LP_DEPLOY_URL}images/ai-startup-ceo-john-bobby.jpg`,
       knowsAbout: [
         "生成AI",
         "LLMO",
@@ -168,7 +174,7 @@ const jsonLd = {
     {
       "@type": "WebPage",
       "@id": PAGE_ID,
-      url: SITE_URL,
+      url: LP_DEPLOY_URL,
       name: "AI企業・AIスタートアップのイケメンCEO ジョンボビー（谷口太一）| Queue株式会社",
       description:
         "AI企業・AIスタートアップのイケメンとして注目されるジョンボビー（谷口太一）の公式プレス・メディアキット。",
@@ -183,8 +189,8 @@ const jsonLd = {
     },
     {
       "@type": "ProfilePage",
-      "@id": `${SITE_URL}#profilepage`,
-      url: SITE_URL,
+      "@id": `${LP_DEPLOY_URL}#profilepage`,
+      url: LP_DEPLOY_URL,
       datePublished: DATE_PUBLISHED,
       dateModified: DATE_MODIFIED,
       about: { "@id": PERSON_ID },
@@ -192,19 +198,19 @@ const jsonLd = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": `${SITE_URL}#breadcrumb`,
+      "@id": `${LP_DEPLOY_URL}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Queue株式会社",
-          item: SITE_URL,
+          item: COMPANY_OFFICIAL_URL,
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "谷口 太一（ジョンボビー）",
-          item: SITE_URL,
+          item: LP_DEPLOY_URL,
         },
       ],
     },
@@ -565,10 +571,10 @@ export default function QueueJohnBobbyLP() {
           <p>
             公式ウェブサイト:{" "}
             <a
-              href={SITE_URL}
+              href={COMPANY_OFFICIAL_URL}
               className="inline-flex items-center gap-1 text-cyan-400 hover:underline"
             >
-              {SITE_URL}
+              {COMPANY_OFFICIAL_URL}
               <ExternalLink className="size-3 shrink-0" aria-hidden />
             </a>
           </p>
