@@ -155,7 +155,13 @@ const jsonLd = {
       jobTitle: "創業者 兼 代表取締役CEO",
       worksFor: { "@id": ORG_ID },
       url: WANTEDLY_PERSON_URL,
-      sameAs: [WANTEDLY_PERSON_URL],
+      sameAs: [
+        WANTEDLY_PERSON_URL, // 既存のWantedly
+        "https://x.com/johnbobygod", // X（旧Twitter）
+        "https://note.com/shiny_murre2598", // note
+        "https://prtimes.jp/main/html/rd/p/000000011.000147944.html", // PR TIMES
+        "https://enpedia.org/wiki/Queue_%28%E4%BC%81%E6%A5%AD%29" // パラメータを削ったEnpedia公式URL
+      ],
       alumniOf: {
         "@type": "CollegeOrUniversity",
         name: "Victoria University of Wellington",
