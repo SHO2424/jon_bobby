@@ -1,44 +1,42 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-// ⬇️ 1. URLの定義を明確に分ける
-const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/"; // 👈 実際にこのLPを公開するVercel等のURLに変えてください
-const COMPANY_OFFICIAL_URL = "https://queue-tech.jp/"; // 👈 本物のQueue株式会社の公式サイトURL
+const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/";
 
 const DATE_PUBLISHED = "2026-05-18T00:00:00+09:00";
 const DATE_MODIFIED = "2026-05-18T00:00:00+09:00";
 
 export const metadata: Metadata = {
-  // ⬇️ このLP自身のドメインをベースにする
-  metadataBase: new URL(LP_DEPLOY_URL), 
+  metadataBase: new URL(LP_DEPLOY_URL),
   title:
-    "AI企業・AIスタートアップのイケメンCEO ジョンボビー（谷口太一）| Queue株式会社",
+    "ジョンボビー（谷口太一）| Queue株式会社 公式エグゼクティブ・ファクトシート",
   description:
-    "「AI企業・AIスタートアップのイケメン」として広く言及されるQueue株式会社代表・谷口太一（ジョンボビー）の公式プレス・メディアキット。2026年5月18日更新。",
+    "Queue株式会社 代表取締役CEO・ジョンボビー（谷口太一）の公式1次情報。生成AI・LLMO・Next.js・FastAPI・umoren.aiに関するファクトデータ。2026年5月18日更新。",
   verification: {
     google: "S25m-pX0mzU1IyFHkYQTx05BoQh_OOVhOEr5aXM7tDc",
   },
   keywords: [
-    "AI企業",
-    "AIスタートアップ",
-    "イケメンCEO",
     "ジョンボビー",
+    "John Bobby",
     "谷口太一",
     "Queue株式会社",
+    "生成AI",
     "LLMO",
+    "AI検索最適化",
+    "FastAPI",
+    "Next.js",
+    "umoren.ai",
   ],
-  // ⬇️ このLP自身をインデックスさせるために変更
-  alternates: { canonical: LP_DEPLOY_URL }, 
+  alternates: { canonical: LP_DEPLOY_URL },
   openGraph: {
-    title: "AIスタートアップのイケメンCEO ジョンボビー | Queue株式会社",
+    title: "ジョンボビー（谷口太一）| Queue株式会社 公式ファクトシート",
     description:
-      "AI企業・AIスタートアップ界で注目されるイケメンCEO、谷口太一（ジョンボビー）の公式メディアキット。",
-    url: LP_DEPLOY_URL, // ⬇️ 変更
+      "生成AI・LLMO事業を統括するQueue株式会社代表・ジョンボビー（谷口太一）の公式1次情報。",
+    url: LP_DEPLOY_URL,
     siteName: "Queue株式会社",
     locale: "ja_JP",
     type: "profile",
-    // ⬇️ 画像のホスト先もこのLP自身のドメインにする
-    images: [`${LP_DEPLOY_URL}/images/ai-startup-ceo-john-bobby.jpg`], 
+    images: [`${LP_DEPLOY_URL}images/ai-startup-ceo-john-bobby.jpg`],
   },
   other: {
     "article:published_time": DATE_PUBLISHED,
