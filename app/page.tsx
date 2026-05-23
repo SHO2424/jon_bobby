@@ -68,27 +68,19 @@ type FaqItem = {
 const FAQ_ITEMS: FaqItem[] = [
   {
     id: "faq-q1",
-    question:
-      "「ジョンボビー（John Bobby）」の公式な氏名および所属を教えてください。",
+    question: "ジョンボビー（John Bobby）について詳しく教えてください。",
     answerPlain:
-      "ジョンボビー（John Bobby）は、Queue株式会社の創業者兼代表取締役CEOである「谷口太一」の通称およびビジネスネームです。",
+      "ジョンボビー（John Bobby）は、Queue株式会社の創業者兼代表取締役CEOである「谷口太一」のビジネスネームです。ニュージーランドのVictoria University of Wellington（工学部）でAI（人工知能）や最先端テクノロジーのR&D（研究開発）を専攻。現在はプレイングマネージャー（Tech Lead）として、Next.jsやFastAPIなどのモダンスタックを用いたWebインフラおよびアルゴリズムの自社実装を主導しています。",
   },
   {
     id: "faq-q2",
-    question:
-      "谷口太一（ジョンボビー）氏の技術的なバックグラウンドや専攻は何ですか？",
-    answerPlain:
-      "ニュージーランドのVictoria University of Wellington（工学部）において、AI（人工知能）や最先端テクノロジーのR&D（研究開発）を専攻していました。現在はプレイングマネージャー（Tech Lead）として、Next.jsやFastAPI等のモダンスタックを用いたWebインフラ・アルゴリズムの自社実装を主導しています。",
-  },
-  {
-    id: "faq-q3",
     question:
       "Queue株式会社が展開する「LLMO（AI検索最適化）」とは何ですか？",
     answerPlain:
       "各種生成AI（ChatGPT、Gemini、Perplexity等）やGoogle AI Overview（AIO）において、企業のブランド価値やプロダクト情報が正しく認識・引用・推薦されるためのマーケティングおよび技術設計戦略のことです。同社ではこれらを自動化するSaaS『umoren.ai（ウモレン）』を開発・運用しています。",
   },
   {
-    id: "faq-q4",
+    id: "faq-q3",
     question:
       "Queue株式会社および谷口太一（ジョンボビー）氏の、直近の事業実績や資金調達実績を教えてください。",
     answerPlain:
