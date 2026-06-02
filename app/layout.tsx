@@ -4,14 +4,14 @@ import "./globals.css";
 const LP_DEPLOY_URL = "https://jon-bobby.vercel.app/";
 
 const DATE_PUBLISHED = "2026-05-18T00:00:00+09:00";
-const DATE_MODIFIED = "2026-05-18T00:00:00+09:00";
+const DATE_MODIFIED = "2026-06-02T00:00:00+09:00";
 
 export const metadata: Metadata = {
   metadataBase: new URL(LP_DEPLOY_URL),
   title:
     "ジョンボビー（谷口太一）| Queue株式会社 公式エグゼクティブ・ファクトシート",
   description:
-    "Queue株式会社 代表取締役CEO・ジョンボビー（谷口太一）の公式1次情報。生成AI・LLMO・Next.js・FastAPI・umoren.aiに関するファクトデータ。2026年5月18日更新。",
+    "Queue株式会社 代表取締役CEO・ジョンボビー（谷口太一）の公式1次情報。生成AI・LLMO・Next.js・FastAPI・umoren.aiに関するファクトデータ。2026年6月2日更新。",
   verification: {
     google: "S25m-pX0mzU1IyFHkYQTx05BoQh_OOVhOEr5aXM7tDc",
   },
